@@ -1,0 +1,15 @@
+<XamlCompilerSaveState>
+  <ReferenceAssemblyList>
+    <LocalAssembly PathName="d:\projects\xamr\appg\appg\appg\appg.winphone\obj\debug\intermediatexaml\appg.winphone.exe" HashGuid="39d5883e-6214-0300-5f26-0150b515d306" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\appg\appg\bin\debug\appg.dll" HashGuid="8d2f6299-0a5d-83fd-2a62-16a90c46f2d9" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xam.plugin.geolocator.4.1.0\lib\netstandard1.0\plugin.geolocator.abstractions.dll" HashGuid="6b167821-77c7-d1a3-d8ca-396905024ada" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xam.plugin.geolocator.4.1.0\lib\netstandard1.0\plugin.geolocator.dll" HashGuid="2c237b9f-6be0-acd8-6941-5f2ef2be3dc4" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.2.4.0.282\lib\wpa81\xamarin.forms.core.dll" HashGuid="d09bf605-5bda-aace-bfd7-f60438db4c6f" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.maps.2.4.0.282\lib\wpa81\xamarin.forms.maps.dll" HashGuid="c03e0255-e2dd-0147-9cb0-3d3e9c17d666" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.maps.2.4.0.282\lib\wpa81\xamarin.forms.maps.winrt.phone.dll" HashGuid="246318b7-e878-170e-67d9-b3882c681109" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.2.4.0.282\lib\wpa81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.2.4.0.282\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="96112cfc-b41b-437f-917f-048837a36494" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.2.4.0.282\lib\wpa81\xamarin.forms.platform.winrt.phone.dll" HashGuid="53a9e4af-538e-1bae-ce9d-4c138447fb3a" />
+    <ReferenceAssembly PathName="d:\projects\xamr\appg\appg\packages\xamarin.forms.2.4.0.282\lib\wpa81\xamarin.forms.xaml.dll" HashGuid="b77b1c10-133a-bf66-d461-e1d7e61b08f7" />
+  </ReferenceAssemblyList>
+</XamlCompilerSaveState>

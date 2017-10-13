@@ -1,0 +1,405 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.props" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{51D67876-7B42-4391-AE40-2B8194F22288}</ProjectGuid>
+    <OutputType>AppContainerExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AppG.WinPhone</RootNamespace>
+    <AssemblyName>AppG.WinPhone</AssemblyName>
+    <DefaultLanguage>en-US</DefaultLanguage>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{76F1466A-8B6D-4E39-A767-685A06062A39};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <SynthesizeLinkMetadata>true</SynthesizeLinkMetadata>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|ARM'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\ARM\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|ARM'">
+    <OutputPath>bin\ARM\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>ARM</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE;NETFX_CORE;WINDOWS_PHONE_APP</DefineConstants>
+    <Optimize>true</Optimize>
+    <NoWarn>;2008</NoWarn>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <ErrorReport>prompt</ErrorReport>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AppxManifest Include="Package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Assets\Logo.scale-240.png" />
+    <Content Include="Assets\SmallLogo.scale-240.png" />
+    <Content Include="Assets\SplashScreen.scale-240.png" />
+    <Content Include="Assets\Square71x71Logo.scale-240.png" />
+    <Content Include="Assets\StoreLogo.scale-240.png" />
+    <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="Content\components\accordion.almost-flat.css" />
+    <Content Include="Content\components\accordion.almost-flat.min.css" />
+    <Content Include="Content\components\accordion.css" />
+    <Content Include="Content\components\accordion.gradient.css" />
+    <Content Include="Content\components\accordion.gradient.min.css" />
+    <Content Include="Content\components\accordion.min.css" />
+    <Content Include="Content\components\autocomplete.almost-flat.css" />
+    <Content Include="Content\components\autocomplete.almost-flat.min.css" />
+    <Content Include="Content\components\autocomplete.css" />
+    <Content Include="Content\components\autocomplete.gradient.css" />
+    <Content Include="Content\components\autocomplete.gradient.min.css" />
+    <Content Include="Content\components\autocomplete.min.css" />
+    <Content Include="Content\components\datepicker.almost-flat.css" />
+    <Content Include="Content\components\datepicker.almost-flat.min.css" />
+    <Content Include="Content\components\datepicker.css" />
+    <Content Include="Content\components\datepicker.gradient.css" />
+    <Content Include="Content\components\datepicker.gradient.min.css" />
+    <Content Include="Content\components\datepicker.min.css" />
+    <Content Include="Content\components\dotnav.almost-flat.css" />
+    <Content Include="Content\components\dotnav.almost-flat.min.css" />
+    <Content Include="Content\components\dotnav.css" />
+    <Content Include="Content\components\dotnav.gradient.css" />
+    <Content Include="Content\components\dotnav.gradient.min.css" />
+    <Content Include="Content\components\dotnav.min.css" />
+    <Content Include="Content\components\form-advanced.almost-flat.css" />
+    <Content Include="Content\components\form-advanced.almost-flat.min.css" />
+    <Content Include="Content\components\form-advanced.css" />
+    <Content Include="Content\components\form-advanced.gradient.css" />
+    <Content Include="Content\components\form-advanced.gradient.min.css" />
+    <Content Include="Content\components\form-advanced.min.css" />
+    <Content Include="Content\components\form-file.almost-flat.css" />
+    <Content Include="Content\components\form-file.almost-flat.min.css" />
+    <Content Include="Content\components\form-file.css" />
+    <Content Include="Content\components\form-file.gradient.css" />
+    <Content Include="Content\components\form-file.gradient.min.css" />
+    <Content Include="Content\components\form-file.min.css" />
+    <Content Include="Content\components\form-password.almost-flat.css" />
+    <Content Include="Content\components\form-password.almost-flat.min.css" />
+    <Content Include="Content\components\form-password.css" />
+    <Content Include="Content\components\form-password.gradient.css" />
+    <Content Include="Content\components\form-password.gradient.min.css" />
+    <Content Include="Content\components\form-password.min.css" />
+    <Content Include="Content\components\form-select.almost-flat.css" />
+    <Content Include="Content\components\form-select.almost-flat.min.css" />
+    <Content Include="Content\components\form-select.css" />
+    <Content Include="Content\components\form-select.gradient.css" />
+    <Content Include="Content\components\form-select.gradient.min.css" />
+    <Content Include="Content\components\form-select.min.css" />
+    <Content Include="Content\components\htmleditor.almost-flat.css" />
+    <Content Include="Content\components\htmleditor.almost-flat.min.css" />
+    <Content Include="Content\components\htmleditor.css" />
+    <Content Include="Content\components\htmleditor.gradient.css" />
+    <Content Include="Content\components\htmleditor.gradient.min.css" />
+    <Content Include="Content\components\htmleditor.min.css" />
+    <Content Include="Content\components\nestable.almost-flat.css" />
+    <Content Include="Content\components\nestable.almost-flat.min.css" />
+    <Content Include="Content\components\nestable.css" />
+    <Content Include="Content\components\nestable.gradient.css" />
+    <Content Include="Content\components\nestable.gradient.min.css" />
+    <Content Include="Content\components\nestable.min.css" />
+    <Content Include="Content\components\notify.almost-flat.css" />
+    <Content Include="Content\components\notify.almost-flat.min.css" />
+    <Content Include="Content\components\notify.css" />
+    <Content Include="Content\components\notify.gradient.css" />
+    <Content Include="Content\components\notify.gradient.min.css" />
+    <Content Include="Content\components\notify.min.css" />
+    <Content Include="Content\components\placeholder.almost-flat.css" />
+    <Content Include="Content\components\placeholder.almost-flat.min.css" />
+    <Content Include="Content\components\placeholder.css" />
+    <Content Include="Content\components\placeholder.gradient.css" />
+    <Content Include="Content\components\placeholder.gradient.min.css" />
+    <Content Include="Content\components\placeholder.min.css" />
+    <Content Include="Content\components\progress.almost-flat.css" />
+    <Content Include="Content\components\progress.almost-flat.min.css" />
+    <Content Include="Content\components\progress.css" />
+    <Content Include="Content\components\progress.gradient.css" />
+    <Content Include="Content\components\progress.gradient.min.css" />
+    <Content Include="Content\components\progress.min.css" />
+    <Content Include="Content\components\search.almost-flat.css" />
+    <Content Include="Content\components\search.almost-flat.min.css" />
+    <Content Include="Content\components\search.css" />
+    <Content Include="Content\components\search.gradient.css" />
+    <Content Include="Content\components\search.gradient.min.css" />
+    <Content Include="Content\components\search.min.css" />
+    <Content Include="Content\components\slidenav.almost-flat.css" />
+    <Content Include="Content\components\slidenav.almost-flat.min.css" />
+    <Content Include="Content\components\slidenav.css" />
+    <Content Include="Content\components\slidenav.gradient.css" />
+    <Content Include="Content\components\slidenav.gradient.min.css" />
+    <Content Include="Content\components\slidenav.min.css" />
+    <Content Include="Content\components\slider.almost-flat.css" />
+    <Content Include="Content\components\slider.almost-flat.min.css" />
+    <Content Include="Content\components\slider.css" />
+    <Content Include="Content\components\slider.gradient.css" />
+    <Content Include="Content\components\slider.gradient.min.css" />
+    <Content Include="Content\components\slider.min.css" />
+    <Content Include="Content\components\slideshow.almost-flat.css" />
+    <Content Include="Content\components\slideshow.almost-flat.min.css" />
+    <Content Include="Content\components\slideshow.css" />
+    <Content Include="Content\components\slideshow.gradient.css" />
+    <Content Include="Content\components\slideshow.gradient.min.css" />
+    <Content Include="Content\components\slideshow.min.css" />
+    <Content Include="Content\components\sortable.almost-flat.css" />
+    <Content Include="Content\components\sortable.almost-flat.min.css" />
+    <Content Include="Content\components\sortable.css" />
+    <Content Include="Content\components\sortable.gradient.css" />
+    <Content Include="Content\components\sortable.gradient.min.css" />
+    <Content Include="Content\components\sortable.min.css" />
+    <Content Include="Content\components\sticky.almost-flat.css" />
+    <Content Include="Content\components\sticky.almost-flat.min.css" />
+    <Content Include="Content\components\sticky.css" />
+    <Content Include="Content\components\sticky.gradient.css" />
+    <Content Include="Content\components\sticky.gradient.min.css" />
+    <Content Include="Content\components\sticky.min.css" />
+    <Content Include="Content\components\tooltip.almost-flat.css" />
+    <Content Include="Content\components\tooltip.almost-flat.min.css" />
+    <Content Include="Content\components\tooltip.css" />
+    <Content Include="Content\components\tooltip.gradient.css" />
+    <Content Include="Content\components\tooltip.gradient.min.css" />
+    <Content Include="Content\components\tooltip.min.css" />
+    <Content Include="Content\components\upload.almost-flat.css" />
+    <Content Include="Content\components\upload.almost-flat.min.css" />
+    <Content Include="Content\components\upload.css" />
+    <Content Include="Content\components\upload.gradient.css" />
+    <Content Include="Content\components\upload.gradient.min.css" />
+    <Content Include="Content\components\upload.min.css" />
+    <Content Include="Content\uikit.almost-flat.css" />
+    <Content Include="Content\uikit.almost-flat.min.css" />
+    <Content Include="Content\uikit.css" />
+    <Content Include="Content\uikit.gradient.css" />
+    <Content Include="Content\uikit.gradient.min.css" />
+    <Content Include="Content\uikit.min.css" />
+    <Content Include="Scripts\components\accordion.js" />
+    <Content Include="Scripts\components\accordion.min.js" />
+    <Content Include="Scripts\components\autocomplete.js" />
+    <Content Include="Scripts\components\autocomplete.min.js" />
+    <Content Include="Scripts\components\datepicker.js" />
+    <Content Include="Scripts\components\datepicker.min.js" />
+    <Content Include="Scripts\components\form-password.js" />
+    <Content Include="Scripts\components\form-password.min.js" />
+    <Content Include="Scripts\components\form-select.js" />
+    <Content Include="Scripts\components\form-select.min.js" />
+    <Content Include="Scripts\components\grid-parallax.js" />
+    <Content Include="Scripts\components\grid-parallax.min.js" />
+    <Content Include="Scripts\components\grid.js" />
+    <Content Include="Scripts\components\grid.min.js" />
+    <Content Include="Scripts\components\htmleditor.js" />
+    <Content Include="Scripts\components\htmleditor.min.js" />
+    <Content Include="Scripts\components\lightbox.js" />
+    <Content Include="Scripts\components\lightbox.min.js" />
+    <Content Include="Scripts\components\nestable.js" />
+    <Content Include="Scripts\components\nestable.min.js" />
+    <Content Include="Scripts\components\notify.js" />
+    <Content Include="Scripts\components\notify.min.js" />
+    <Content Include="Scripts\components\pagination.js" />
+    <Content Include="Scripts\components\pagination.min.js" />
+    <Content Include="Scripts\components\parallax.js" />
+    <Content Include="Scripts\components\parallax.min.js" />
+    <Content Include="Scripts\components\search.js" />
+    <Content Include="Scripts\components\search.min.js" />
+    <Content Include="Scripts\components\slider.js" />
+    <Content Include="Scripts\components\slider.min.js" />
+    <Content Include="Scripts\components\slideset.js" />
+    <Content Include="Scripts\components\slideset.min.js" />
+    <Content Include="Scripts\components\slideshow-fx.js" />
+    <Content Include="Scripts\components\slideshow-fx.min.js" />
+    <Content Include="Scripts\components\slideshow.js" />
+    <Content Include="Scripts\components\slideshow.min.js" />
+    <Content Include="Scripts\components\sortable.js" />
+    <Content Include="Scripts\components\sortable.min.js" />
+    <Content Include="Scripts\components\sticky.js" />
+    <Content Include="Scripts\components\sticky.min.js" />
+    <Content Include="Scripts\components\timepicker.js" />
+    <Content Include="Scripts\components\timepicker.min.js" />
+    <Content Include="Scripts\components\tooltip.js" />
+    <Content Include="Scripts\components\tooltip.min.js" />
+    <Content Include="Scripts\components\upload.js" />
+    <Content Include="Scripts\components\upload.min.js" />
+    <Content Include="Scripts\core\alert.js" />
+    <Content Include="Scripts\core\alert.min.js" />
+    <Content Include="Scripts\core\button.js" />
+    <Content Include="Scripts\core\button.min.js" />
+    <Content Include="Scripts\core\core.js" />
+    <Content Include="Scripts\core\core.min.js" />
+    <Content Include="Scripts\core\cover.js" />
+    <Content Include="Scripts\core\cover.min.js" />
+    <Content Include="Scripts\core\dropdown.js" />
+    <Content Include="Scripts\core\dropdown.min.js" />
+    <Content Include="Scripts\core\grid.js" />
+    <Content Include="Scripts\core\grid.min.js" />
+    <Content Include="Scripts\core\modal.js" />
+    <Content Include="Scripts\core\modal.min.js" />
+    <Content Include="Scripts\core\nav.js" />
+    <Content Include="Scripts\core\nav.min.js" />
+    <Content Include="Scripts\core\offcanvas.js" />
+    <Content Include="Scripts\core\offcanvas.min.js" />
+    <Content Include="Scripts\core\scrollspy.js" />
+    <Content Include="Scripts\core\scrollspy.min.js" />
+    <Content Include="Scripts\core\smooth-scroll.js" />
+    <Content Include="Scripts\core\smooth-scroll.min.js" />
+    <Content Include="Scripts\core\switcher.js" />
+    <Content Include="Scripts\core\switcher.min.js" />
+    <Content Include="Scripts\core\tab.js" />
+    <Content Include="Scripts\core\tab.min.js" />
+    <Content Include="Scripts\core\toggle.js" />
+    <Content Include="Scripts\core\toggle.min.js" />
+    <Content Include="Scripts\core\touch.js" />
+    <Content Include="Scripts\core\touch.min.js" />
+    <Content Include="Scripts\core\utility.js" />
+    <Content Include="Scripts\core\utility.min.js" />
+    <Content Include="Scripts\jquery-1.9.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.9.0.js" />
+    <Content Include="Scripts\jquery-1.9.0.min.js" />
+    <Content Include="Scripts\uikit.js" />
+    <Content Include="Scripts\uikit.min.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Page Include="MainPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AppG\AppG.csproj">
+      <Project>{3ffff959-b01e-45eb-9c60-8aaeb3669e47}</Project>
+      <Name>AppG</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Plugin.Geolocator, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.0\lib\netstandard1.0\Plugin.Geolocator.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Plugin.Geolocator.Abstractions, Version=4.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xam.Plugin.Geolocator.4.1.0\lib\netstandard1.0\Plugin.Geolocator.Abstractions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.4.0.282\lib\wpa81\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Maps.2.4.0.282\lib\wpa81\Xamarin.Forms.Maps.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Maps.WinRT.Phone, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.Maps.2.4.0.282\lib\wpa81\Xamarin.Forms.Maps.WinRT.Phone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.4.0.282\lib\wpa81\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.WinRT, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.4.0.282\lib\wpa81\Xamarin.Forms.Platform.WinRT.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.WinRT.Phone, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.4.0.282\lib\wpa81\Xamarin.Forms.Platform.WinRT.Phone.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.4.0.282\lib\wpa81\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <None Include="fonts\fontawesome-webfont.woff" />
+    <None Include="fonts\fontawesome-webfont.woff2" />
+    <None Include="packages.config" />
+    <None Include="Scripts\jquery-1.9.0.min.map" />
+  </ItemGroup>
+  <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(TargetPlatformIdentifier)' == '' ">
+    <TargetPlatformIdentifier>WindowsPhoneApp</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\WindowsXaml\v$(VisualStudioVersion)\Microsoft.Windows.UI.Xaml.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.props')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.props'))" />
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets'))" />
+  </Target>
+  <Import Project="..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.4.0.282\build\netstandard1.0\Xamarin.Forms.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
